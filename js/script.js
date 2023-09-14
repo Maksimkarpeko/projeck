@@ -120,3 +120,4 @@
 // console.log(isChecked || !isClose);
 
 // Уроки 6 Git and Github 
+ 
