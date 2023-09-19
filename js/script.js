@@ -121,3 +121,65 @@
 
 // Уроки 6 Git and Github 
  
+// Урок 7 Условие 
+
+// if(0){
+//     console.log("ok");
+// } else {
+//     console.log("Error");
+// }  
+
+
+
+// if(num < 49){
+//     console.log("error");
+// } else if (num>100){
+//     console.log("Много");
+// } else{
+//     console.log("ok!")
+// }
+
+// (num === 50) ? console.log("ok!") : console.log("error");
+
+// const num = 50;
+
+// switch (num){
+//     case 49: 
+//         console.log("Неверно");
+//         break;
+//     case 100:
+//         console.log("Неверно");
+//     break;
+//     case 50:
+//         console.log("Правильно");
+//     break
+//     default:
+//         console.log("не в этот раз");
+//         break;
+// }
+// 8.1 Логические операторы
+
+// const hamburger = 5;
+// const fries = null;
+// if(hamburger && fries){
+//     console.log('я сыт');
+// } else {
+//     console.log("Я не сыт")
+// }
+
+const hamburger = 3;
+const fries = 1;
+const cola = 0;
+
+console.log(hamburger === 3 && cola && fries)
+
+console.log(1 && 0);
+console.log(1 && 5);
+console.log(null && 5);
+console.log(0 && "ifjjwfahsjfa")
+
+if(hamburger === 3 && cola === 1 && fries ){
+    console.log('Все сыты');
+} else {
+    console.log("Мы уходим")
+}
