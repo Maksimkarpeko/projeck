@@ -9,7 +9,7 @@
 // let number = 4.6;// тип данных число
 // console.log(4/0)// => infinity
 // console.log(-4/0)// => -infinity
-// console.log("string" *9) // Nan 
+// console.log("string" *9) // Nan
 
 // const persone = "Alex";// тип данных string
 
@@ -66,7 +66,7 @@
 //   "Alice": 800
 // };
 
-// Урок 3 Простое общение с пользовотелем 
+// Урок 3 Простое общение с пользовотелем
 
 // alert("Hello");
 
@@ -94,7 +94,7 @@
 
 // alert(`Привет, ${user}`)
 
-//Урок 5  Операторы Js 
+//Урок 5  Операторы Js
 // console.log("arr"+ "-object");
 // console.log(4 + +"5")
 
@@ -116,18 +116,18 @@
 // console.log (2*4 !== '8');
 
 // const isChecked = false,
-//       isClose = false;  
+//       isClose = false;
 // console.log(isChecked || !isClose);
 
-// Уроки 6 Git and Github 
+// Уроки 6 Git and Github
  
-// Урок 7 Условие 
+// Урок 7 Условие
 
 // if(0){
 //     console.log("ok");
 // } else {
 //     console.log("Error");
-// }  
+// }
 
 
 
@@ -144,7 +144,7 @@
 // const num = 50;
 
 // switch (num){
-//     case 49: 
+//     case 49:
 //         console.log("Неверно");
 //         break;
 //     case 100:
@@ -167,20 +167,70 @@
 //     console.log("Я не сыт")
 // }
 
-const hamburger = 3;
-const fries = 1;
-const cola = 0;
+// const hamburger = 3;
+// const fries = 1;
+// const cola = 0;
 
-console.log(hamburger === 3 && cola && fries)
+// console.log(hamburger === 3 && cola && fries);
 
-console.log(1 && 0);
-console.log(1 && 5);
-console.log(null && 5);
-console.log(0 && "ifjjwfahsjfa")
+// console.log(1 && 0);
+// console.log(1 && 5);
+// console.log(null && 5);
+// console.log(0 && "ifjjwfahsjfa");
 
-if(hamburger === 3 && cola === 1 && fries ){
-    console.log('Все сыты');
-} else {
-    console.log("Мы уходим")
-}
+// if(hamburger === 3 && cola === 1 && fries ){
+//     console.log('Все сыты');
+// } else {
+//     console.log("Мы уходим");
+// }
 
+
+// const hamburger = 3;
+// const fries = 3;
+// const cola = 0;
+// const nuggets = 2; 
+
+
+// if(hamburger === 3 && cola ===2 || fries === 3 && nuggets){
+//     console.log('Все Довольны');
+// } else {
+//     console.log("Мы уходим");
+// }
+
+// console.log(hamburger === 3 && cola ===2 || fries === 3 && nuggets);
+
+// let JonhReport, AlexReport, samReport, mariaReport = "done";
+
+// console.log(JonhReport || AlexReport || samReport || mariaReport);
+
+// Задание №1
+// console.log(NaN && 2 && undefined); // => nan
+// console.log(1 && 2 && 3); // => 3
+// console.log(!1 && 2 || !3); // => False
+// console.log(25 || null && !3); // => 25
+// console.log(NaN || null || !3 || undefined || 5); // => 5
+// console.log( NaN || null && !3 && undefined || 5); // => 5
+// console.log(5 === 5 && 3 > 1 || 5); // => true
+
+
+// let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
+
+
+// if (hamburger || cola || fries === 3 || nuggets) {
+//    console.log('Done!')
+// }
+
+
+
+// let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
+
+
+// if (hamburger && cola || fries === 3 && nuggets) {
+//    console.log('Done!')
+// }
