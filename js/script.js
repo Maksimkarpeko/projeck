@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 // let number = 10;
 
@@ -188,7 +188,7 @@
 // const hamburger = 3;
 // const fries = 3;
 // const cola = 0;
-// const nuggets = 2; 
+// const nuggets = 2;
 
 
 // if(hamburger === 3 && cola ===2 || fries === 3 && nuggets){
@@ -233,4 +233,60 @@
 
 // if (hamburger && cola || fries === 3 && nuggets) {
 //    console.log('Done!')
+// }
+
+// 9 Циклы
+
+// let num = 50;
+
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
+
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num <= 55);
+
+// for (let i = 1; i < 10; i++){
+//     if (i === 6) {
+//         break;
+//         continue;
+//     }
+//     console.log(i);
+// }
+// 9.1 Циклы в цикле и метки
+
+// for (let i = 0; i < 3; i++){
+//     console.log(i);
+//     for (let j = 0; j < 3; j++){
+//         console.log(j);  
+//     }
+// }
+
+// let result = '';
+// const length = 10; 
+
+// for (let i = 1; i < length; i++){
+    
+//     for (let j = 0; j < i; j++) { 
+//         result += "*";
+//     }
+//     result += '\n';
+// }
+
+// console.log(result);
+
+
+// first: for (let i = 0; i < 3; i++){
+//     console.log(`First level : ${i}`);
+//     for (let j = 0; j < 3; j++){
+//         console.log(`Second level : ${j}`);  
+//         for (let k = 0; k < 5; k++){
+//             if (k === 2) break first;
+//             console.log(`Third level : ${k}`);  
+//         }
+//     }
 // }
