@@ -183,4 +183,4 @@ if(hamburger === 3 && cola === 1 && fries ){
 } else {
     console.log("Мы уходим")
 }
-// I love you 
+
