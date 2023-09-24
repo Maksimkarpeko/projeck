@@ -329,4 +329,129 @@
 
 // const calc = (a, b) => a + b ;
 
-   
+// const mout = 500
+// const usdCurr = 50;
+// const eurCurr = 32;
+// const discount = 0.9;
+
+// function convert(amout, curr) {
+//    return curr * amout;
+// }
+
+// function promoption(result) {
+//    console.log(result * discount)
+// }
+
+// const res = convert(500, usdCurr);
+// promoption(res);
+
+
+// function test() {
+//    for (let i = 0; i < 5; i++){
+//       console.log(i);
+//       if( i === 3) return
+//    }
+//    console.log("Done");
+// }
+
+// test();
+
+// function doNothing() { };
+// console.log(doNothing() === undefined);
+
+// 11 методы и свойства строк и чисел
+// const str = 'teSt';
+
+// console.log(str[2]);
+
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+
+// const fruit = "Some fruit";
+
+// console.log(fruit.indexOf("m"));
+
+// const logg = "hello world";
+
+// console.log(logg.slice(6, 11));
+
+// console.log(logg.substring(6, 11));
+
+// const num = 12.2;
+// console.log(Math.round(num));
+
+// const test = "12.2px";
+// console.log(parseInt(test));
+// console.log(parseFloat(test));
+
+// 12 Callback функция
+
+// function first() {
+//       do something
+//       setTimeout(function () {
+//             console.log(1);
+//       }, 500);
+// }
+
+// function seconds() {
+//       console.log(2)
+// }
+
+
+// first();
+// seconds();
+
+// function learnJs(lang, callback) {
+//       console.log(`Я учу: ${lang}`);
+//       callback();
+// }
+
+// function done() {
+//       console.log("Я прошел этот урок");
+// }
+
+// learnJs("javaScript", done);
+
+
+// 13 Объекты, диструктиризация объектов (ES6)
+
+// const options = {
+//    name: 'test',
+//    width: 1024,
+//    height: 1024,
+//    colors: {
+//       border: "black",
+//       bg: 'red'
+//    },
+//    makeTest: function () {
+//       console.log("Test");
+//    }
+// };
+
+// options.makeTest();
+
+// const { border, bg } = options.colors;
+// console.log(border)
+
+// console.log(Object.keys(options).length);
+
+// console.log(options.name);
+
+// delete options.name;
+
+// console.log(options);
+
+// let counter = 0;
+// for (let key in options) {
+//    if(typeof (options[key]) === "object"){
+//       for (let i in options[key]) {
+//          console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//       }
+//    } else {
+//       console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//       counter++;
+//    }
+// }
+// console.log(counter);
+
+
