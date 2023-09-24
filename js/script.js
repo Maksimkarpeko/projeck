@@ -262,16 +262,16 @@
 // for (let i = 0; i < 3; i++){
 //     console.log(i);
 //     for (let j = 0; j < 3; j++){
-//         console.log(j);  
+//         console.log(j);
 //     }
 // }
 
 // let result = '';
-// const length = 10; 
+// const length = 10;
 
 // for (let i = 1; i < length; i++){
     
-//     for (let j = 0; j < i; j++) { 
+//     for (let j = 0; j < i; j++) {
 //         result += "*";
 //     }
 //     result += '\n';
@@ -283,10 +283,50 @@
 // first: for (let i = 0; i < 3; i++){
 //     console.log(`First level : ${i}`);
 //     for (let j = 0; j < 3; j++){
-//         console.log(`Second level : ${j}`);  
+//         console.log(`Second level : ${j}`);
 //         for (let k = 0; k < 5; k++){
 //             if (k === 2) break first;
-//             console.log(`Third level : ${k}`);  
+//             console.log(`Third level : ${k}`);
 //         }
 //     }
 // }
+// 10 Функции
+// let  num = 20
+
+// function showFirstMessage(text) {
+//    console.log(text);
+//    console.log(num);
+// }
+
+// showFirstMessage("Hello World");
+// console.log(num);
+
+// function calc(a, b) {
+//    return (a + b);
+// }
+
+// console.log(calc(4, 3));
+// console.log(calc(5, 6));
+// console.log(calc(10, 3));
+// console.log(calc(20, 18));
+
+// function ret() {
+//    let num = 50;
+
+      //
+   
+//    return num;
+// }
+
+// const anotherNum = ret();
+// console.log(anotherNum);
+
+// const logger = function () {
+//    console.log("hello")
+// };
+
+// logger();
+
+// const calc = (a, b) => a + b ;
+
+   
