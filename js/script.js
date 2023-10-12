@@ -771,5 +771,4 @@
 // console.log(+"Infinity");//=>Infinity
 // console.log("Ёжик" > "яблока");//=>false
 // console.log(0 || '' || 2 || undefined || true || false);//=> 2
-vsfs
-vsfs
+//  21 Получение элементы со страницы 
