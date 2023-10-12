@@ -750,24 +750,26 @@
 // let x = 5;
 // console.log(x++);//=>5
 
-console.log([] + false - null + true);//=>Nan
-let y = 1;
-let x = y = 2;
-console.log(x);// =>2
+// console.log([] + false - null + true);//=>Nan
+// let y = 1;
+// let x = y = 2;
+// console.log(x);// =>2
 
-console.log([] + 1 + 2);//=>12
-console.log("1"[0])// =>1
+// console.log([] + 1 + 2);//=>12
+// console.log("1"[0])// =>1
 
-console.log(2 && 1 && null && 0 && undefined)//=>null
-let a, b;
-// console.log(typeof (a && b));// => undefined
-// console.log(typeof !!(a && b));// => boolean
+// console.log(2 && 1 && null && 0 && undefined)//=>null
+// let a, b;
+// // console.log(typeof (a && b));// => undefined
+// // console.log(typeof !!(a && b));// => boolean
 
-// console.log(null || 2 && 3 || 4);// => 3
-a = [1, 2, 3];
-b = [1, 2, 3];
-console.log(a == b);//=>false
+// // console.log(null || 2 && 3 || 4);// => 3
+// a = [1, 2, 3];
+// b = [1, 2, 3];
+// console.log(a == b);//=>false
 
-console.log(+"Infinity");//=>Infinity
-console.log("Ёжик" > "яблока");//=>false
-console.log(0 || '' || 2 || undefined || true || false);//=> 2
+// console.log(+"Infinity");//=>Infinity
+// console.log("Ёжик" > "яблока");//=>false
+// console.log(0 || '' || 2 || undefined || true || false);//=> 2
+vsfs
+vsfs
