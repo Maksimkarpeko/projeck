@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // let number = 10;
 
@@ -455,3 +455,319 @@
 // console.log(counter);
 
 
+// 14 Массивы псевдомассивы
+
+// const arr = [10, 130, 54, 2, 8];
+// arr.sort(compareNum);
+// console.log(arr);
+
+
+// function compareNum(a, b) {
+// 	return a - b;
+// }
+// arr[99] = 0;
+// console.log(arr.length);
+
+// console.log(arr)
+
+// arr.forEach(function (item, i, arr) {
+// 	console.log(`${i}: ${item} внутри массива [${arr}]`)
+// });
+
+// arr.pop();
+// arr.push(10);
+
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+// for (let value of arr) {
+// 	console.log(value);
+// }
+
+// const str = prompt("", "");
+// const products = str.split(", ");
+// products.sort();
+// console.log(products.join('; '));
+
+
+//15 Передача данных
+
+// let a = 5,
+//    b = a;
+
+// b = b + 5;
+
+// console.log(b);
+// console.log(a);
+
+// const obj = {
+//    a: 5,
+//    b: 1
+// };
+
+// const copy = obj; //obj === Ссылка
+
+// copy.a = 10;
+
+// console.log(copy);
+// console.log(obj);
+
+// function copy(mainObj) {
+//    let objCopy = {};
+
+//    let key;
+//    for (key in mainObj) {
+//       objCopy[key] = mainObj[key];
+//    }
+
+//    return objCopy;
+// }
+
+// const numbers = {
+//    a: 2,
+//    b: 5,
+//    c: {
+//       x: 7,
+//       y: 4,
+//    }
+// };
+
+// const newNumbers = copy(numbers);
+
+// newNumbers.a = 10;
+
+// console.log(newNumbers);
+
+// console.log(numbers);
+
+// const add = {
+//    d: 17,
+//    e: 20,
+// }
+
+
+// const clone = Object.assign({}, add);
+
+// clone.d = 20;
+
+// console.log(add);
+// console.log(clone);
+
+// const oldArray = ["a", 'b', 'c'];
+// const newArray = oldArray.slice();
+
+// newArray[1]= "Lorem "
+// console.log(newArray);
+// console.log(oldArray);
+
+// const video = ['youtube', 'rutube', 'vine'],
+//       blogs = ['word', 'ww', 'wsf'];
+//       internet = [...video, ...blogs, 'vk'];
+
+// console.log(internet);
+
+// function log(a, b, c) {
+//    console.log(a+b);
+//    console.log(b+c);
+//    console.log(c+a+b);
+// }
+
+// const num = [2, 5, 6];
+
+// log(...num)
+
+// const array = ['a', 'v'];
+
+// const newAarray = [...array];
+
+// console.log(newAarray);
+
+// const q = {
+//    one: 1,
+//    two: 2
+// };
+
+// const newObj = {...q};
+
+//16 Основы ООП, прототипно-орентированое наследие
+
+// let str = 'some';
+// let strObj = new String(str);
+
+// console.log(typeof (str));//=>string
+// console.log(typeof (strObj));//=>object
+
+// console.dir([1, 2, 3]);
+
+// const soldier = {
+//    health: 400,
+//    armor: 100,
+//    sayHello: function () {
+//       console.log("hello");
+//    }
+// };
+
+
+// const Jonh = Object.create(soldier);
+
+// const Jonh = {
+//    health: 100,
+// };
+
+// Jonh.__proto__ = soldier;
+
+// Object.setPrototypeOf(Jonh, soldier);
+
+// console.log(Jonh.sayHello);
+// Jonh.sayHello();
+
+//17 Исправление ошибок Breakpoint
+
+// function hello() {
+//    console.log("Hello world");
+// }
+
+// hello();
+
+// function hi() {
+//    console.log("Hi teacher");
+// }
+
+// hi();
+
+// const arr = [1, 865, 50, 877, 15],
+//    sorted = arr.sort(compareNum);
+      
+// function compareNum(a, b) {
+//    return a - b;
+// }
+
+// console.log(sorted);
+
+// 18 Диномическая типезация JS
+
+// To string
+
+// 1) Через мемод String
+// console.log(typeof (String(null)));// => string
+// console.log(typeof (String(100)));// => string
+
+// 2) Канкатинация
+// console.log(typeof (5 + ''));// => string
+
+// const num = 5;
+
+// console.log("https://vk.com/catalog/" + num);
+
+// const fontSize = 26 + "px";
+
+// console.log(fontSize);
+
+// To Number
+
+//1) Через метод Number
+// console.log(typeof(Number('kfasl;fka')));// => Number
+// console.log(Number("kfasl;fka"));//=> NaN
+
+//2) Унарный +
+// console.log(typeof (+"10"));//=> Number
+
+//3) Через методы
+// console.log(typeof (parseInt("15px", 10)));// number
+
+// let answer = prompt("Введи свой возраст", "19");
+
+// let year = prompt("Введи год рождение", "2023");
+
+// let years = year - answer;
+
+// alert(years);
+
+// To boolean
+
+//1)
+// 0, '', null, undefined, NaN; => false
+
+// let switcher = null;
+// if (switcher) {
+//    console.log("Working")
+// }
+
+// switcher = 1;
+
+// if (switcher) {
+//    console.log("Working")
+// }
+
+// 2) через метод Boolean
+// console.log(Boolean('kfasl;fka'))// => true
+// console.log(typeof (boolean('kfasl;fka')))//=> boolean
+
+//3) Через знаки !! => boolean
+
+// console.log(typeof (!!"4444"));// => boolean
+
+// 19 Замыкание и лексическое окружение
+
+// let number = 5; debugger
+
+// function lognumber() {
+//    console.log(number);debugger
+// }
+
+// number = 6;
+
+// lognumber(); debugger // =>6
+
+
+// number = 8;
+
+// lognumber(); debugger // => 8
+
+// function createCounter() {
+//    let counter = 0;
+//    const myFunction = function () {
+//       counter = counter + 1;
+//       return counter;
+//    }
+//    return myFunction;
+// }
+
+// const increment = createCounter();
+
+// const c1 = increment();
+// const c2 = increment();
+// const c3 = increment();
+
+
+// console.log(c1, c2, c3);//=> 1,2,3
+
+
+// 20 практика
+// let x = 5;
+// console.log(x++);//=>5
+
+console.log([] + false - null + true);//=>Nan
+let y = 1;
+let x = y = 2;
+console.log(x);// =>2
+
+console.log([] + 1 + 2);//=>12
+console.log("1"[0])// =>1
+
+console.log(2 && 1 && null && 0 && undefined)//=>null
+let a, b;
+// console.log(typeof (a && b));// => undefined
+// console.log(typeof !!(a && b));// => boolean
+
+// console.log(null || 2 && 3 || 4);// => 3
+a = [1, 2, 3];
+b = [1, 2, 3];
+console.log(a == b);//=>false
+
+console.log(+"Infinity");//=>Infinity
+console.log("Ёжик" > "яблока");//=>false
+console.log(0 || '' || 2 || undefined || true || false);//=> 2
