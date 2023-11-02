@@ -771,4 +771,79 @@
 // console.log(+"Infinity");//=>Infinity
 // console.log("Ёжик" > "яблока");//=>false
 // console.log(0 || '' || 2 || undefined || true || false);//=> 2
+
 //  21 Получение элементы со страницы 
+
+// Переход на папку дополнение к уроку 42
+
+// 22 Действия с элементами на странице 
+
+// переход на папку дополнение к уроку 42
+
+
+// let x = prompt("Введите x");
+
+// if(x<=3 && x>=-3){
+//       alert(x/3);
+// }else if (x<-3){
+//       alert(x*x +1)
+// }
+
+// 23 Рекурсия 
+
+let studets1 = {
+    js:[{
+        name:"John",
+        progres: 100
+    },
+    {
+        name:"Ivan",
+        progres: 20,
+    }
+    ],
+    html:{
+        basic:[{
+            name:"Maksim",
+            progres:10
+        },
+        {
+            name: "Alex",
+            progres:20,
+        }],
+        pro:[{
+            name:"Marta",
+            progres: 50,
+        }],
+        
+    }
+};
+
+
+function getTotalProgresByIteretion(data){
+    let total = 0;
+    let studets = 0;
+
+    for(let curse of Object.values(data)){
+        if(Array.isArray(curse)){
+            studets += curse.length
+            for (let i = 0; i< curse.length; i++){
+                total += curse[i].progres;
+            }
+        } else{
+            for(let subCurse of Object.values(curse)){
+                studets += subCurse.length;
+                for (let i = 0; i< subCurse.length; i++){
+                total += subCurse[i].progres;
+                }
+            }
+            
+        }
+    }
+
+    return total/studets;
+}
+
+
+console.log(getTotalProgresByIteretion(studets1));
+
+
